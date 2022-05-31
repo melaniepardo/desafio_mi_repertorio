@@ -1,4 +1,4 @@
-#  Desafío Always Music 2.0
+#  Desafío Mi repertorio
 
 ## Descripción proyecto
 Proyecto que permite consultar, registrar, actualizar y eliminar canciones. Para lo anterior, se desarrolla un servidor con Node que utiliza el paquete pg para conectarse con PostgreSQL y funciones asíncronas para hacer las consultas a la base de datos.

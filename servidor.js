@@ -19,16 +19,13 @@ http
                 body += chunk;
             });
             req.on("end", async () => {
-                // Paso 2
                 const datosJson = JSON.parse(body)
                 const datos = [
                     datosJson.artista,
                     datosJson.cancion,
                     datosJson.tono
                 ]
-                // Paso 3
                 const respuesta = await insertar(datos);
-                // Paso 4
                 res.end(JSON.stringify(respuesta));
             });
         }
@@ -50,15 +47,12 @@ http
                     datosJson.cancion,
                     datosJson.tono
                 ]
-                // Paso 2
                 const respuesta = await editar(datos);
                 res.end(JSON.stringify(respuesta));
             });
         }
         if (req.url.startsWith("/cancion?") && req.method == "DELETE") {
-            // Paso 3
             const { id } = url.parse(req.url, true).query;
-            // Paso 4
             const respuesta = await eliminar(id);
             res.end(JSON.stringify(respuesta));
         }

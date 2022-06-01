@@ -1,20 +1,21 @@
-#  Desafío Mi repertorio
+#  Prueba Banco Solar
 
 ## Descripción proyecto
-Proyecto que permite consultar, registrar, actualizar y eliminar canciones. Para lo anterior, se desarrolla un servidor con Node que utiliza el paquete pg para conectarse con PostgreSQL y funciones asíncronas para hacer las consultas a la base de datos.
 
 ## Contenidos aplicados 📖
-● Levantando un servidor con conexión a PostgreSQL.
-● Insertando registros.
-● Consultado registros.
-● Actualizando registros.
-● Eliminando registros.
+● Conectar una base de datos PostgreSQL con Node.
+● Realizar consultas DML con Node y el paquete pg.
+● Realizar consultas TCL con Node y el paquete pg.
+● Construir una API RESTful utilizando PostgreSQL para la persistencia de datos.
+● Manejar errores.
+● Manejar códigos de estado HTTP
 
 ## Instrucciones 📌
-- Después de descargar el proyecto, desde VSC abra una nueva terminal y ejecute : `npm install`, `npm i pg`, `npm i axios` y luego
-`node servidor.js`, archivo js que permite la ejecución.  
+- Después de descargar el proyecto, desde VSC abra una nueva terminal y ejecute : `npm install`, `npm i pg` y luego
+`node index.js`, archivo que permite la ejecución.
+## Librerías 📌
+- Javascript v16.13.2
 
 ### Quiénes contribuyeron ✒️
 + [Melanie Pardo](https://github.com/melaniepardo)
-+ [Katherine Flores](https://github.com/kalvaradof)
 
